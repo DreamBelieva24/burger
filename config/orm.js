@@ -20,7 +20,7 @@ var orm = {
       queryString += cols.toString();
       queryString += ") ";
       queryString += "VALUES (";
-      queryString += printQuestionMarks(vals.length);
+      queryString += req.body.name, false
       queryString += ") ";
   
       console.log(queryString);

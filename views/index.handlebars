@@ -1,15 +1,10 @@
-//Setup the index.handlebars to have the template that Handlebars can render onto.
-//Create a button in index.handlebars that will submit the user input into the database.
+!.. Setup the index.handlebars to have the template that Handlebars can render onto.
+!.. Create a button in index.handlebars that will submit the user input into the database.
 
 <h1>Order Up!</h1>
 
-<h2>Cats that are not sleepy!</h2>
-
 <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
+  {{#each burger}}
   {{/each}}
 </ul>
 
@@ -19,13 +14,8 @@
   <div class="form-group">
     <label for="ca">Order:</label>
     <input type="text" id="ca" name="name">
-  </div>
 
-  <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
 
-  <button type="submit">Submit</button>
+  <button type="submit">Ready!</button>
+  </div>
 </form>
